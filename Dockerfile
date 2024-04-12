@@ -17,7 +17,7 @@ RUN adduser \
 
 # Copy our static executable.
 COPY certstream-server-go /app/certstream-server-go
-COPY ./config.yaml /app/config.yaml
+COPY config.yaml /app/config.yaml
 
 RUN chmod +x /app/certstream-server-go
 
